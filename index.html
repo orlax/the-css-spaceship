@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Triangle</title>
+		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/p5.min.js"></script>
+		<script type="text/javascript" src="js/field.js"></script>
+		<script>
+			
+$(document).on('ready', go);
+			function go(){
+				var down = false;
+				var rotation = '0deg';
+				/*window.setInterval(function(){
+					if(down){
+						$('.triangle').css('transform','translateZ(50px)rotateZ('+rotation+')');
+						$('#shadow').css('transform','scale(1,1)');
+						down=false;}
+					else{
+						$('.triangle').css('transform','translateZ(70px)rotateZ('+rotation+')');
+						$('#shadow').css('transform','scale(1.2,1.2)');
+						down=true;}
+				},1000);*/
+
+				$('#up').on('click', function(){goTo('up')});
+				$('#right').on('click', function(){goTo('right')});
+				$('#bottom').on('click', function(){goTo('down')});
+				$('#left').on('click', function(){goTo('left')});
+
+				function goTo(direccion){
+					switch(direccion){
+						case 'up':
+							rotation = '0deg';
+							direccion_ = 'up';
+							$('.triangle').css('transform','translateZ(50px)rotateZ('+rotation+')');
+							break;
+						case 'right':
+							rotation = '90deg';
+							direccion_ = 'right';
+							$('.triangle').css('transform','translateZ(50px)rotateZ('+rotation+')');
+							break;
+						case 'down':
+							rotation = '180deg';
+							direccion_ = 'down';
+							$('.triangle').css('transform','translateZ(50px)rotateZ('+rotation+')');
+							break;
+						case 'left':
+							rotation = '270deg';
+							direccion_ = 'left';
+							$('.triangle').css('transform','translateZ(50px)rotateZ('+rotation+')');
+							break;
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+	<!--<div id="animated"></div>-->
+	<div id="canvasContainer">
+		<div id="shadow"></div>
+	</div>
+	<div id="container">
+		<div class="triangle">
+			<img src="img/ship-top.png" class="front"></img>
+			<img src="img/ship-bot.png" class="back"></img>
+			<img src="img/ship-left.png" class="side1"></img>
+			<img src="img/ship-right.png" class="side2"></img>
+			<img src="img/ship-back.png" class="side3"></img>
+		</div>
+	</div>
+	<div id="botones">
+		<div id="up" class="buttom"></div>
+		<div id="right" class="buttom"></div>
+		<div id="bottom" class="buttom"></div>
+		<div id="left" class="buttom"></div>
+	</div>
+	</body>
+</html>
