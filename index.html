@@ -6,21 +6,21 @@
 		<script type="text/javascript" src="js/p5.min.js"></script>
 		<script type="text/javascript" src="js/field.js"></script>
 		<script>
-			
+
 $(document).on('ready', go);
 			function go(){
 				var down = false;
 				var rotation = '0deg';
-				/*window.setInterval(function(){
+			window.setInterval(function(){
 					if(down){
-						$('.triangle').css('transform','translateZ(50px)rotateZ('+rotation+')');
+						$('.triangle').css('transform','translateZ(20px)rotateZ('+rotation+')');
 						$('#shadow').css('transform','scale(1,1)');
 						down=false;}
 					else{
-						$('.triangle').css('transform','translateZ(70px)rotateZ('+rotation+')');
+						$('.triangle').css('transform','translateZ(40px)rotateZ('+rotation+')');
 						$('#shadow').css('transform','scale(1.2,1.2)');
 						down=true;}
-				},1000);*/
+				},1000);
 
 				$('#up').on('click', function(){goTo('up')});
 				$('#right').on('click', function(){goTo('right')});
@@ -57,16 +57,22 @@ $(document).on('ready', go);
 	<body>
 	<!--<div id="animated"></div>-->
 	<div id="canvasContainer">
-		<div id="shadow"></div>
+		<!--<div id="shadow"></div>-->
 	</div>
 	<div id="container">
-		<div class="triangle">
+		<a href="#"><div class="triangle">
 			<img src="img/ship-top.png" class="front"></img>
 			<img src="img/ship-bot.png" class="back"></img>
 			<img src="img/ship-left.png" class="side1"></img>
 			<img src="img/ship-right.png" class="side2"></img>
 			<img src="img/ship-back.png" class="side3"></img>
 		</div>
+	</a>
+	</div>
+	<div id="hover-pop">
+		<p>
+			¿Como crear una nave css 3d?
+		</p>
 	</div>
 	<div id="botones">
 		<div id="up" class="buttom"></div>

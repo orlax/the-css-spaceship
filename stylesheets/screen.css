@@ -29,8 +29,8 @@ body {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   margin: auto;
   perspective: 800px;
   perspective-origin: 50% 50%;
@@ -57,8 +57,8 @@ body {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: 150px;
-  width: 150px;
+  height: 37%;
+  width: 37%;
   margin: auto;
   transform: rotateZ(0deg) translateZ(50px);
   transition: all ease-in-out 1s;
@@ -89,40 +89,40 @@ body {
 
 /* line 83, ../sass/screen.sass */
 .front {
-  transform: translateZ(20px);
-  -webkit-transform: translateZ(20px);
-  -moz-transform: translateZ(20px);
+  transform: translateZ(10px) translateY(1px);
+  -webkit-transform: translateZ(10px) translateY(1px);
+  -moz-transform: translateZ(10px) translateY(1px);
 }
 
 /* line 88, ../sass/screen.sass */
 .side1 {
   display: block;
   position: absolute;
-  height: 150px;
-  width: 40px;
-  transform: translateY(10px) translateX(18px) rotateY(-90deg) rotateX(29.5deg);
-  -moz-transform: translateY(10px) translateX(18px) rotateY(-90deg) rotateX(29.5deg);
-  -webkit-transform: translateY(10px) translateX(18px) rotateY(-90deg) rotateX(29.5deg);
+  height: 100%;
+  width: 28%;
+  transform: translateY(9%) translateX(50%) rotateY(-90deg) rotateX(29.5deg);
+  -moz-transform: translateY(9%) translateX(50%) rotateY(-90deg) rotateX(29.5deg);
+  -webkit-transform: translateY(9%) translateX(50%) rotateY(-90deg) rotateX(29.5deg);
 }
 
 /* line 96, ../sass/screen.sass */
 .side2 {
   display: block;
   position: absolute;
-  height: 150px;
-  width: 40px;
-  transform: translateY(10px) translateX(92px) rotateY(90deg) rotateX(29.5deg);
-  -webkit-transform: translateY(10px) translateX(92px) rotateY(90deg) rotateX(29.5deg);
-  -moz-transform: translateY(10px) translateX(92px) rotateY(90deg) rotateX(29.5deg);
+  height: 100%;
+  width: 28%;
+  transform: translateY(10%) translateX(220%) rotateY(90deg) rotateX(29.5deg);
+  -webkit-transform: translateY(10%) translateX(220%) rotateY(90deg) rotateX(29.5deg);
+  -moz-transform: translateY(10%) translateX(220%) rotateY(90deg) rotateX(29.5deg);
 }
 
 /* line 104, ../sass/screen.sass */
 .side3 {
   width: 100%;
-  height: 40px;
-  transform: translateY(129px) rotateX(-90deg);
-  -webkit-transform: translateY(129px) rotateX(-90deg);
-  -moz-transform: translateY(129px) rotateX(-90deg);
+  height: 28%;
+  transform: translateY(310%) rotateX(-90deg);
+  -webkit-transform: translateY(310%) rotateX(-90deg);
+  -moz-transform: translateY(310%) rotateX(-90deg);
 }
 
 /* line 112, ../sass/screen.sass */
@@ -132,8 +132,8 @@ body {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   margin: auto;
 }
 
@@ -141,8 +141,8 @@ body {
 .buttom {
   background: #404040;
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 12%;
+  height: 12%;
   border-radius: 100%;
   opacity: 0.2;
   transition: all ease 0.5s;
@@ -189,9 +189,9 @@ body {
   top: 35%;
   left: 15%;
   border-radius: 100%;
-  width: 70px;
-  height: 140px;
-  box-shadow: 120px 0px 90px #404040;
+  width: 18%;
+  height: 35%;
+  box-shadow: 20px 0px 80px #404040;
   transition: all ease-in-out 1s;
   -webkit-transition: all ease-in-out 1s;
   -moz-transition: all ease-in-out 1s;

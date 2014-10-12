@@ -6,7 +6,7 @@ var cantidad = 25;
 
 
 function setup(){
-  width=400;height=400;
+  width=200;height=200;
   var myCanvas = createCanvas(width, height);
   myCanvas.parent('canvasContainer');
   for(i=0; i<cantidad; i++){
